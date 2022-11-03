@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 10vh;
+}
+
+main{
+    display: flex;
+    background-color: #fff;
+    max-width: 500px;
+    max-height: 370px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+main img{
+    max-width: 50%;
+}
+
+main article{
+    max-width: 50%;
+    padding: 30px;
+}
+
+main article h1{
+    font-family: 'Fraunces', serif;
+    font-size: 1.7rem;
+    line-height: 1;
+    color: hsl(212, 21%, 14%);
+    margin-top: 20px;
+}
+
+main article p{
+    font-family: 'Montserrat', serif;
+    font-size: .7rem;
+    color: hsl(228, 12%, 48%);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+main article div span strong{
+    font-family: 'Fraunces', serif;
+    color: hsl(159, 36%, 37%);
+    font-size: 1.7rem;
+    margin-right: 20px;
+}
+
+main article div span.normal-price{
+    text-decoration: line-through;
+    font-size: .8rem;
+    position: absolute;
+    line-height: 2.3rem;
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', serif;
+}
+
+main article .label{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: .7rem;
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', serif;
+}
+
+main article .price{
+    margin: 20px 0px;
+}
+
+main article button{
+    display: block;
+    width: 100%;
+    background-color: hsl(159, 36%, 37%);
+    border-radius: 5px;
+    border: 0 solid hsl(159, 36%, 37%);
+    color: #fff;
+    padding: 10px 0px; 
+    font-family: 'Montserrat', serif;
+    cursor: pointer;
+}
+
+main article button:hover{
+    background-color: hsl(156, 42%, 18%);
+    transition: 200ms;
+}
+
+footer{
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Montserrat', serif;
+}
+
+@media only screen and (max-width: 768px) {
+    body{
+        padding: 20px;
+    }
+    
+    main{
+        flex-direction: column;
+        max-height: unset;
+    }
+
+    article{
+        padding: 25px;
+    }
+
+    main img{
+        max-width: 100%;
+        max-height: 280px;
+        object-fit: cover;
+    }
+    
+    main article{
+        max-width: 100%;
+    }
+
+    main article h1{
+        font-size: 2rem;
+    }
+    
+    main article p{
+        font-family: 'Montserrat', serif;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    
+    main article div span strong{
+        font-size: 2rem;
+    }
+    
+    main article div span.normal-price{
+        font-size: .8rem;
+    }
+    
+    main article .label{
+        font-size: .9rem;
+    }
+    
+    main article button{
+        padding: 20px 0;
+    }
+}
